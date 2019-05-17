@@ -50,7 +50,7 @@ func handleConnection(c net.Conn) {
 		temp := strings.TrimSpace(string(netData))
 		if temp == "STOP" {
 			break
-		} else if temp == "SHUTDOWN" {
+		} else if temp == "SHUTDOWN" || temp == "shutdown" {
 			shutdown = true
 			break
 		} else {
